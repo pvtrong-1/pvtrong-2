@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Phan Vĩnh Trọng | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --black: #0f0f0f;
+            --dark: #1a1a1a;
+            --wine: #7b0f19;
+            --red: #ff2e2e;
+            --gray: #b3b3b3;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: var(--black);
+            color: var(--white);
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        h1, h2 {
+            font-weight: 700;
+        }
+
+        h2 {
+            color: var(--red);
+            margin-bottom: 25px;
+            border-left: 5px solid var(--wine);
+            padding-left: 15px;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f0f0f 60%, #7b0f19 100%);
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+        }
+
+        .hero-text span {
+            color: var(--red);
+        }
+
+        .hero-text p {
+            margin-top: 20px;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: var(--wine);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background: var(--red);
+            transform: scale(1.05);
+        }
+
+        .hero img {
+            width: 350px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+        }
+
+        .card {
+            background: var(--dark);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 12px;
+            color: var(--gray);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #0a0a0a;
+            color: var(--gray);
+        }
+
+        @media(max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+            }
+
+            .hero img {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Xin chào, mình là <span>Phan Vĩnh Trọng</span></h1>
+        <p>
+            Nhà nghiên cứu Kinh tế & Phân tích Dữ liệu.  
+            Tập trung vào Kinh tế lượng và các mảng khác về Kinh tế.
+            Hứng thú với phân tích dữ liệu và nghiên cứu thực nghiệm.
+        </p>
+        <a href="portfolio.pdf" class="btn" download>📄 Tải Portfolio PDF</a>
+    </div>
+    <img src="avatar.jpg" alt="Phan Vĩnh Trọng">
+</section>
+
+<section>
+    <h2>🌱 Giới thiệu</h2>
+    <div class="card">
+        <ul>
+            <li>📍 Hà Nội, Việt Nam</li>
+            <li>🎓 Khoa Kinh tế quốc tế – Trường Đại học Ngoại thương</li>
+            <li>⭐ Trưởng ban Nghiên cứu & Phát triển – Innovation Research Community</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>🔎 Lĩnh vực quan tâm</h2>
+    <div class="card">
+        <ul>
+            <li>Kinh tế lượng (Econometrics)</li>
+            <li>Phân tích dữ liệu bằng SQL, Power BI & Python</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>🎓 Học vấn</h2>
+    <div class="card">
+        <ul>
+            <li>Sinh viên năm 2 Khoa Kinh tế quốc tế - FTU</li>
+            <li>Nghiên cứu Case Kinh tế – Nghiên cứu độc lập</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>💼 Kỹ năng</h2>
+    <div class="card">
+        <ul>
+            <li>SQL</li>
+            <li>Power BI</li>
+            <li>Python</li>
+            <li>Phân tích dữ liệu</li>
+            <li>Research & Academic Writing</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>🧠 Dự án / Research Papers</h2>
+    
+    <div class="card">
+        <h3 style="color: var(--white); margin-bottom:10px;">📊 Dự án nền tảng Hourskills</h3>
+        <p style="color: var(--gray); line-height:1.6;">
+            Project thực hiện cho bộ môn Lập trình cho phân tích dữ liệu và tính toán khoa học.
+            Ứng dụng Python để xử lý dữ liệu và xây dựng hệ thống quản lý kỹ năng.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>📬 Liên hệ</h2>
+    <div class="card">
+        <ul>
+            <li>Email: <a href="mailto:trongphan18112006@gmail.com" style="color: var(--red); text-decoration: none;">trongphan18112006@gmail.com</a></li>
+            <li>Facebook: <a href="https://www.facebook.com/trong.phanvinh.142/" target="_blank" style="color: var(--red); text-decoration: none;">facebook.com/trong.phanvinh.142</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/phan-vinh-trong-9b4378359/" target="_blank" style="color: var(--red); text-decoration: none;">linkedin.com/in/phan-vinh-trong</a></li>
+        </ul>
+    </div>
+</section>
+
+</body>
+</html>
